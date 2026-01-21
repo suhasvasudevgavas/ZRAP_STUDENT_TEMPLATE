@@ -11,6 +11,7 @@ etag master LastchangedAt
   update;
   delete;
   field ( readonly, numbering : managed ) Id;
+  field ( readonly ) CreatedBy, CreatedAt, LastchangedBy, LastchangedAt, LocinstLastchangedAt;
 
   mapping for zrap_stud
     {
