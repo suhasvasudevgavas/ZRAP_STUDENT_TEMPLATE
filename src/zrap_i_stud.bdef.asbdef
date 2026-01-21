@@ -1,0 +1,28 @@
+managed implementation in class zbp_rap_i_stud unique;
+strict ( 2 );
+
+define behavior for zrap_i_stud alias stud
+persistent table zrap_stud
+lock master
+authorization master ( instance )
+etag master LastchangedAt
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly, numbering : managed ) Id;
+
+  mapping for zrap_stud
+    {
+      Id                   = id;
+      Fname                = fname;
+      Lname                = lname;
+      Dob                  = dob;
+      Class                = class;
+      CreatedBy            = created_by;
+      CreatedAt            = created_at;
+      LastchangedBy        = lastchanged_by;
+      LastchangedAt        = lastchanged_at;
+      LocinstLastchangedAt = locinst_lastchanged_at;
+    }
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for student'
+define service Zrap_sd_stud {
+  expose zrap_c_stud;
+}

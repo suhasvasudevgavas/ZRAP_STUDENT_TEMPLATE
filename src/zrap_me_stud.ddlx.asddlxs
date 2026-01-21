@@ -1,0 +1,54 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: { typeName: 'Student',
+                  typeNamePlural: 'Students',
+                  title: { label: 'Student', type: #STANDARD, value: 'Lname' } }
+
+annotate entity zrap_c_stud with
+
+{
+  @UI.facet: [ { id: 'stud',
+                 label: 'Student',
+                 position: 10,
+                 purpose: #STANDARD,
+                 type: #IDENTIFICATION_REFERENCE } ]
+  @UI.identification: [ { position: 10, label: 'Id' } ]
+  @UI.lineItem: [ { position: 10, label: 'Id' } ]
+  Id;
+
+  @UI.identification: [ { position: 20, label: 'Fname' } ]
+  @UI.lineItem: [ { position: 20, label: 'Fname' } ]
+  Fname;
+
+  @UI.identification: [ { position: 30, label: 'Lname' } ]
+  @UI.lineItem: [ { position: 30, label: 'Lname' } ]
+  Lname;
+
+  @UI.identification: [ { position: 40, label: 'Dob' } ]
+  @UI.lineItem: [ { position: 40, label: 'Dob' } ]
+  Dob;
+
+  @UI.identification: [ { position: 50, label: 'Class' } ]
+  @UI.lineItem: [ { position: 50, label: 'Class' } ]
+  Class;
+
+  @UI.identification: [ { position: 60, label: 'CreatedBy' } ]
+  @UI.lineItem: [ { position: 60, label: 'CreatedBy' } ]
+  CreatedBy;
+
+  @UI.identification: [ { position: 70, label: 'CreatedAt' } ]
+  @UI.lineItem: [ { position: 70, label: 'CreatedAt' } ]
+  CreatedAt;
+
+  @UI.identification: [ { position: 80, label: 'LastchangedBy' } ]
+  @UI.lineItem: [ { position: 80, label: 'LastchangedBy' } ]
+  LastchangedBy;
+
+  @UI.identification: [ { position: 90, label: 'LastchangedAt' } ]
+  @UI.lineItem: [ { position: 90, label: 'LastchangedAt' } ]
+  LastchangedAt;
+
+  @UI.identification: [ { position: 100, label: 'LocinstLastchangedAt' } ]
+  @UI.lineItem: [ { position: 100, label: 'LocinstLastchangedAt' } ]
+  LocinstLastchangedAt;
+}
